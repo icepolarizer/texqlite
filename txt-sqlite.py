@@ -7,7 +7,7 @@ import sqlite3
 
 help_manual = """
 This is a program which converts text file to sqlite db.\n
-Usage example: txt-sqlite.py -f textfile.txt -o sqlite_output.db -s , -is --
+Usage example: txt-sqlite.py -i
 """
 
 """
@@ -26,10 +26,10 @@ if output_filename == None: output_filename = 'sqlite_converted.db'
 if '-i' in sys.argv:
     input_filename = raw_input("Input filename: ")
     output_filename = raw_input("Output filename: ")
-    saparator = raw_input("Record separator string: ")
+    separator = raw_input("Record separator string: ")
     inner_sepa = raw_input("Field separator string: ")
     table_name = raw_input("Table name: ")
-    fields = raw_input("Fields(example: field1,field2): ")
+    fields = raw_input("Fields(example: field1 text, field2 text): ")
 else:
     input_filename = sys.argv[1]
     output_filename = 'output.db'
