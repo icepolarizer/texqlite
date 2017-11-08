@@ -68,7 +68,7 @@ else:
     for j in txtdb_table:
         sqlite_values.append((tuple(j.split(inner_sepa))))
 
-print sqlite_values
+#print sqlite_values
 
 print 'insert into %s values(%s)' % (table_name, ('?,'*len(fields.split(',')))[:-1])
 
