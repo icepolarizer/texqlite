@@ -25,6 +25,12 @@ for i in arg:
 
 if output_filename == None: output_filename = 'sqlite_converted.db'
 """
+
+if len(sys.argv) == 1:
+    print "Wrong argument. Please provide an -i option or filename"
+    print "Examples: 'texqlite -i', 'texqlite db.txt' "
+    sys.exit()
+
 if '-i' in sys.argv:
     input_filename = raw_input("Input filename: ")
     output_filename = raw_input("Output filename: ")
