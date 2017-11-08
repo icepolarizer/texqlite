@@ -7,7 +7,7 @@ import sqlite3
 
 help_manual = """
 This is a program which converts text file to sqlite db.\n
-Usage example: txt-sqlite.py -f textfile.txt -o sqlite_output.db
+Usage example: txt-sqlite.py -f textfile.txt -o sqlite_output.db -s , -is --
 """
 
 arg = sys.argv
